@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial',sans-serif;
+}
+
+
+header {
+    padding: 20px 24px;
+    background: var(--04, #F2F3F5);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--10, #DFE2E5);
+}
+
+header .menu__list {
+    display: flex;
+    list-style: none;
+    margin-left: 80px;
+}
+
+header .menu__list li {
+    margin-left: 32px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header .menu__list li a {
+    text-decoration: none;
+    color: var(--80, #2F3133);
+}
+
+header .menu__list li:nth-child(2){
+    font-weight: 700;
+    position: relative;
+}
+
+header .menu__list li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    bottom: -34px; 
+    left: 50%;
+    transform: translateX(-50%);
+    rotate: -45deg;
+    width: 20px;
+    height:20px;
+    background:white;
+    border-style: solid;
+    border-color: var(--10, #DFE2E5);
+    border-bottom: none;
+    border-left: none
+    
+}
+
+
+header .menu__button {
+    width: 212px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 8px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background: var(--Primary, #0067FF);
+    color: var(--White, #FFFFFF);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.info {
+    padding: 32px 24px;
+    padding-bottom: 104px;
+}   
+
+.info .info__img {
+    width: 100%;
+}
+
+.info .info__title {
+    color: var(--Text-90, #12151A);
+    margin-top: 32px;
+    font-size: 32px;
+}
+
+
+.info__wrapper {
+    margin: 36px 0px;
+    display: grid;
+    grid-template-columns: 449px 449px; 
+    justify-content: center;
+    align-items: center;
+    gap:22px; 
+    padding: 0 20px;
+    max-width: 100%;
+    position: relative;
+}
+
+.info__box {
+    width: 449px;
+    height: 144px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid var(--20, #C4C8CC);
+}
+
+.info__box p {
+    color: var(--90, #18191A);
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.info__text a {
+    text-decoration: none;
+    color: var(--Primary, #0067FF);
+}
